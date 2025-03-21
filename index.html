@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1"></script>
+</head>
+<body>   
+    <header>
+    <nav>
+        <a href="/" id="HostName">PORTFOLIO</a>
+        <br>
+        <ul>
+            <li><a href="#Home" onclick="celebrate()">Home</a></li>
+            <li><a href="#aboutImg" onclick="celebrate()">About</a></li>
+            <li><a href="#Skills" onclick="celebrate()">Skills</a></li>
+            <li><a href="#resumeImg" onclick="celebrate()">Resume</a></li>
+            <li><a href="#Contact" onclick="celebrate()">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="section1">
+        <div>
+            <br><br><br><br><br>
+            <div class="content">
+            <h1 id="Home">Hi, I'm </h1>
+            <h1>Hemanth <span style="color: black;">Kumar</span> M</h1>
+            <h4>I'm a Fullstack Web Developer</h4>
+            </div>
+            <img src="img/hemanth-liquid-cut.png" alt="user_image" id="userImg">
+            <div class="socialLinks">
+                <a href="https://www.instagram.com/__the_introvert__00?igsh=MTdrODA3cDFwNmswcw=="  target="_blank" onclick="celebrate()"><img src="./img/instagram-brands-solid.svg" alt=""></a>
+                <a href="https://github.com/hemanth2006-mkhr"  target="_blank"><img src="./img/github-brands-solid.svg" alt="" onclick="celebrate()"></a>
+                <a href="https://www.linkedin.com/in/hemanth-kumar-m-66a6802b5/"  target="_blank"><img src="./img/linkedin-brands-solid.svg" alt="" onclick="celebrate()"></a>
+            </div><br>
+        </div>
+    </section>
+    <section class="section2">
+        <div>
+            <h1 id="About">About Me</h1>
+            <br><br><br>
+            <img src="./img/about.png" alt="about" id="aboutImg">
+            <p>I am a passionate student and full-stack web developer with a keen interest in creating dynamic, user-friendly web applications.
+                I thrive on learning new technologies and transforming innovative ideas into digital solutions.I am a versatile full-stack web developer specializing in crafting responsive and dynamic web applications using CSS, JavaScript, React, MongoDB, and Python.
+                With a deep understanding of modern front-end frameworks like React and expertise in back-end technologies such as MongoDB and Python, I build efficient and scalable solutions.
+                </p>
+        </div>
+    </section>
+    <section class="section3">
+        <h1 id="Skills">Skills</h1><br><br><br>
+        <div class="skills">
+        <div id="html">
+            <img src="./img/html-5.png" alt="" width="100px">
+            <p>HTML (HyperText Markup Language) is the foundation of web development, used to structure and display content on web pages. It defines the layout and elements of a webpage, 
+                working alongside CSS (for styling) and JavaScript (for interactivity).
+            </p>
+        </div>
+        <div id="css">
+            <img src="./img/css.png" alt="" width="100px">
+            <p>CSS (Cascading Style Sheets) is a styling language used to design and layout web pages. It controls the appearance, colors, fonts, spacing, animations, and responsiveness of HTML elements.</p>
+        </div>
+        <div id="js">
+            <img src="./img/js.png" alt="" width="100px">
+            <p>JavaScript (JS) is a powerful, high-level programming language primarily used for web development. It enables dynamic and interactive features on websites,
+                working alongside HTML and CSS. JavaScript runs in the browser but can also be used on the backend with Node.js.</p>
+        </div>
+        <div id="react">
+            <img src="./img/physics.png" alt="" width="100px">
+            <p>React is a JavaScript library for building fast and interactive user interfaces (UIs). Developed by Facebook (Meta), it follows a component-based architecture that makes it easy to build reusable UI elements.</p>
+        </div>
+        <div id="python">
+            <img src="./img/python.png" alt="" width="100px">
+            <p>Python is widely used in web development due to its simplicity, flexibility, and vast ecosystem of frameworks. It is primarily used for backend development,
+                handling server-side logic, databases, and API integrations.</p>
+        </div>
+        <div id="canvaLogo">
+            <img src="./img/Canva-New-Logo.png" alt="" width="200px">
+            <p>Canva is a popular graphic design platform that allows users to create professional-quality designs with ease. It offers a drag-and-drop interface,
+                 pre-made templates, and a vast library of design elements like images, icons, fonts, and animations.</p>
+        </div>
+        </div>
+    </section>
+        <section class="section4">
+            <h1>Resume</h1>
+            <img src="./img/resume.jpg" alt="" width="400px" id="resumeImg">
+            <p>You can view my resume <button id="viewBtn"><a href="./img/hemanth-resume.png" target="_blank" onclick="celebrate()"><b> View</b></a></button> <button id="downloadBtn"><a href="./img/hemanth-resume.png" download="" target="_blank"><b> Download</b></a></button></p>
+        </section>
+        <section class="section5">
+            <h1 id="Contact">Contact</h1>
+            <br><br>
+            <p>If you Discuss more in detail , Please contact me </p>
+            <br><br>
+            <p><b>Email : </b> mkhrmani11gamer@gmail.com</p>
+            <br>
+            <p style="padding-bottom: 50px;"><b>Phone : </b> 8122004778</p>
+        </section>
+    <footer>
+        <p>&copy; Hemanth Kumar M , 2025 </p>
+    </footer>
+</body>
+</html>
+<script>
+    function celebrate() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
+</script>
